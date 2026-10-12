@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <form action="" method="get" autocomplete="on">
+        <h2>Student Registration</h2>
+        <fieldset> <legend>Personal Information</legend>
+        <br>
+        <label for="FullName">Full Name :</label>
+        <input 
+            type="text"id="FullName"name="FullName"placeholder="Enter Your Name" required minlength="3" maxlength="50">
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Mail" required>
+        </p>
+        
+        <p>Password: 
+            <input type="password" name="password" id="password" placeholder="Enter Your Password"  required>
+        </p>
+
+        <p>Gender:  
+            Male
+            <input type="radio" name="Gender" id="Male" value="Male">
+            Female
+            <input type="radio" name="Gender" id="Female" value="Female">
+            Other
+            <input type="radio" name="Gender" id="Other" value="Other">
+        </p>
+    
+        <label for="number">Phone Number: </label>
+        <input type="tel" name="number" id="number" placeholder="9999999999" required>
+        <br>
+        <p>
+            <label for="DOB">DOB:</label>
+            <input type="date" name="DOB" id="DOB" required>
+        </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset><legend>Academic Information</legend>
+            <p>
+                <label for="Course">Select Course</label>
+                <select name="Course" id="Course" required>
+                    <option value="" disabled selected>--Select Course</option>
+                    <option value="btech">BTech</option>
+                    <option value="bca">BCA</option>
+                    <option value="mba">MBA</option>
+                    <option value="bba">BBA</option>
+                    <option value="mtech">MTech</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="languages">Known Programming Language: </label>
+
+                <br>
+
+                <select name="languages" id="languages" multiples size="1">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                    <option value="python">Pyhton</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="skills">Programming Skills</label>
+                <input type="range" name="skills" id="skills" min="0" max="100" value="50">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset><legend>Adress Information</legend>
+        <p>
+            <label for="city">Your City:</label>
+
+            <select name="city" id="city" required>
+                <option value="" disabled selected>--Select City--</option>
+                <option value="delhi">Delhi</option>
+                <option value="mathura">Mathura</option>
+                <option value="agra">Agra</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="address">Address:</label>
+            <br>
+            <textarea name="address" id="address" rows="5" cols="30" placeholder="Enter Your complete Adress"></textarea>
+        </p>
+
+        <p>
+        <label for="pincode">PIN Code</label>
+        <input type="number" name="pincode" id="pincode" placeholder="201301" required
+           maxlength="6" pattern="[0-9]{6}" >
+        </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset><legend>Skills & Interest</legend>
+            <br>
+            <label for="skills">Select Your Skills</label>
+
+            <br><br>
+
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skills" value="html" id="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="css" value="css">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" name="skills" id="javascript" value="javascript">
+            <label for="react">React</label>
+            <input type="checkbox" name="skills" id="react" value="react">
+            <label for="java">Java</label>
+            <input type="checkbox" name="skills" id="java" value="java">
+
+            <br><br>
+
+            <label for="website">Portfolio Website</label>
+            <input type="url" name="website" id="website" placeholder="https://example.com">
+            
+            <br><br>
+
+            <label for="Favorite">Favorite Color</label>
+            <input type="color" name="Favorite" id="color" value="color">
+
+        </fieldset>
+
+            <br>
+
+        <fieldset><legend>Document Upload</legend>
+        
+            <br>
+
+            <label for="resume">Upload Resume</label>
+            <input type="file" name="resume" id="resume" value="resume">
+        
+            <br><br>
+
+            <label for="profile">Upload Profile Photo</label>
+            <input type="file" name="profile" id="photo" value="photo">
+
+        </fieldset>
+
+        <fieldset><legend>Confirmation</legend>
+            <br>
+            
+            <input type="checkbox" name="conditions" id="conditions">
+            <label for="conditions">I agree to the terms and conditions</label>
+
+            <br><br>
+
+            <input type="checkbox" name="Subscribe" id="Subscribe" >
+            <label for="Subscribe">Subscribe me to the newsletter</label>
+
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+    </form>
+
+</body>
+</html>
